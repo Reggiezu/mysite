@@ -1,0 +1,36 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AudioLand</title>
+    <link rel="stylesheet" href="{% static 'styletwo.css' %}" />
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <h2>AudioLand</h2>
+
+        <div class="right">
+          <a href="/signin" class="btn btn-secondary">sign in</a>
+          <a href="/signup" class="btn btn-primary">register</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="left">
+        <div class="content">
+          <h1>Music is better as a community.</h1>
+        </div>
+      </div>
+      <div class="right">
+        <div class="outer-circle">
+          <div class="inner-circle"></div>
+          <div class="person"></div>
+          <img src="{% static '/AudioLand.png' %}" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
